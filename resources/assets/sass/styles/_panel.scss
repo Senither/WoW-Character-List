@@ -1,0 +1,70 @@
+
+#panel {
+    background: $background;
+    color: #fff;
+
+    @include box-shadow(#ccc);
+
+    position: relative;
+    min-height: 0;
+
+    & a:hover {
+        color: #fff;
+    }
+
+    & .col-wrap {
+        padding: 16px 20px 0px 20px;
+        width: 625px;
+    }
+
+    & .col-wrap {
+        margin: 0 auto;
+    }
+}
+
+#control-wrap {
+    width: 780px;
+    position: relative;
+    height: 3px;
+    margin: 0 auto;
+
+    & a.toggle {
+        position: absolute;
+        top: -4px;
+        right: 0;
+
+        @include box-shadow(#ccc);
+
+        width: 95px;
+        height: 20px;
+
+        padding: 6px 0 0 0;
+
+        background: $background url(../images/arrow_expand_collapse.png) no-repeat 5px 2px;
+        display: block;
+        overflow: hidden;
+
+        font-size: 9px;
+        text-transform: uppercase;
+        color: #ccc;
+        text-decoration: none;
+
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+    & a.toggle span {
+        display: block;
+        margin: -2px 0 0 26px;
+    }
+
+    & a.toggle:hover {
+        color: #eee;
+
+    }
+
+    & .active {
+        background-position: 5px -28px;
+    }
+}

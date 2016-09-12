@@ -1,0 +1,89 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $body-background;
+    color: $background;
+    border-top: 3px solid $background;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    width: 784px;
+    border: 1px solid #f2f2f2;
+    background: #f2f2f2 url(../images/bg_crosshatch.gif);
+    margin: 40px auto 20px auto;
+}
+
+#main {
+    width: 700px;
+    border: 1px solid #fff;
+    background: #fff url(../images/bg_header_line.gif) no-repeat 2px 2px;
+    margin: 40px auto;
+}
+
+#wrapper, #main {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.col-wrap {
+    padding: 60px 40px 20px 40px;
+
+    & .section {
+        position: relative;
+    }
+
+    & .col-1, & .col-2, & .col-3 {
+        display: inline;
+        float: left;
+        position: relative;
+        margin-right: 20px;
+    }
+
+    & .col-1 {
+        width: 140px;
+    }
+
+    & .col-2 {
+        width: 300px;
+    }
+
+    & .col-3 {
+        width: 460px;
+    }
+
+    & .col-end {
+        margin-right: 0;
+        padding-bottom: 18px;
+    }
+}
+
+.right {
+    float: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.shadow {
+    @include box-shadow(#ccc);
+}
