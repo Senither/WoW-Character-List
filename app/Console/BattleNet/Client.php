@@ -77,6 +77,8 @@ class Client
 
     private function sendRequest($url)
     {
+        $url = trim(str_replace(' ', '%20', $url));
+
         $ch = curl_init();
 
         curl_setopt($ch, CURLOPT_URL, $url);
