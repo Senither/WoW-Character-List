@@ -3,8 +3,8 @@
 <head>
     <title>{{ config('app.name') }} - Home</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}" media="all"/>
-    <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ env('APP_ENV') == 'local' ? asset('css/app.css') : secure_asset('css/app.css') }}" media="all"/>
+    <script type="text/javascript" src="{{ env('APP_ENV') == 'local' ? asset('js/app.js') : secure_asset('js/app.js') }}"></script>
 </head>
 <body>
     <a name="jump-top" id="jump-top"></a>
