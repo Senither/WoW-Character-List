@@ -15,7 +15,7 @@
 
     <h5 class="left"> <strong>{{ $character->level }}</strong>
         {{ $character->race }} <u>{{ $character->talent }}</u> {{ $character->class }}, <br>
-        Realm: <span class="character-realm" title="Battlegroup: Misery">Kazzak</span>
+        Realm: <span class="character-realm">{{ $character->realm }}</span>
     </h5>
     
     <table>
