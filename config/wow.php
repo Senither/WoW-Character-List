@@ -38,11 +38,10 @@ return [
     | API Update rate
     |--------------------------------------------------------------------------
     |
-    | This is the list of characters that should be fetched from the BattleNet
-    | API, the key should be the realm of the character, and the vaoue is
-    | is the character name itself.
-    |
+    | This is the rate at which the characters will be updated at in minutes,
+    | it is recommended that the rate isn't too low since there isn't much 
+    | point in hitting the API if there isn't going to be any updates.
     */
    
-   'update-rate' => 125
+   'update-rate' => 60 * 12
 ];
