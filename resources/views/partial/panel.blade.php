@@ -11,7 +11,7 @@
         </p>
 
         <p>
-            If you're interestead in the project for some weird reason, or just have any questions you're welcome to contact me via my BattleTag <span style="color: #8ea2c3;">Alexis#2854</span>, or you can checkout the project on <a href="#">GitHub</a>.
+            If you're interestead in the project for some weird reason, or just have any questions you're welcome to contact me via my BattleTag <span style="color: #8ea2c3;">Alexis#2854</span>, or you can checkout the project on <a href="https://github.com/Senither/WoW-Character-List">GitHub</a>.
         </p>
     </div>
     <div class="clear"></div>
