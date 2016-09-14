@@ -13,7 +13,7 @@ trait DataResource
 
     protected function formatRace($id)
     {
-        foreach ($this->races AS $race) {
+        foreach ($this->races as $race) {
             if ($id == $race['id']) {
                 return $race['name'];
             }
@@ -101,7 +101,7 @@ trait DataResource
 
     protected function formatClass($id)
     {
-        foreach ($this->classes AS $class) {
+        foreach ($this->classes as $class) {
             if ($id == $class['id']) {
                 return $class['name'];
             }

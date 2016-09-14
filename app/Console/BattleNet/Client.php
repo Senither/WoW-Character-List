@@ -5,7 +5,7 @@ namespace App\Console\BattleNet;
 use App\Character;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Log;
-use GuzzleHttp\Client AS HttpClient;
+use GuzzleHttp\Client as HttpClient;
 
 class Client
 {
@@ -37,7 +37,7 @@ class Client
         $model->talent = $data->get('talents.1.spec.name');
 
         $characterTitle = '%s';
-        foreach ($data->get('titles', []) AS $title) {
+        foreach ($data->get('titles', []) as $title) {
             if (! isset($title['selected'])) {
                 continue;
             }

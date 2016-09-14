@@ -50,7 +50,7 @@ class CharactersUpdateCommand extends Command
             return $this->info('No characters are ready to be updated.');
         }
 
-        foreach ($characters AS $character) {
+        foreach ($characters as $character) {
             $this->line(sprintf('Updating %s-%s...', $character->name, $character->realm));
 
             $this->client->update($character);

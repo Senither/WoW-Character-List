@@ -21,7 +21,7 @@ return [
     | API Region
     |--------------------------------------------------------------------------
     |
-    | This will determine what API endpoint that is going to be hit when 
+    | This will determine what API endpoint that is going to be hit when
     | retrieving data from the BattleNet API, available options are:
     |
     |   EU, US, KR, TW
@@ -39,7 +39,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | This is the rate at which the characters will be updated at in minutes,
-    | it is recommended that the rate isn't too low since there isn't much 
+    | it is recommended that the rate isn't too low since there isn't much
     | point in hitting the API if there isn't going to be any updates.
     */
    

@@ -43,7 +43,7 @@ class CharactersAddCommand extends Command
     {
         if ($this->exists()) {
             return $this->warn(sprintf(
-                'There is already a character called %s on %s in the database!', 
+                'There is already a character called %s on %s in the database!',
                 $this->argument('name'), $this->argument('realm')
             ));
         }
