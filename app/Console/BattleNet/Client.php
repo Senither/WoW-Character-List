@@ -34,7 +34,7 @@ class Client
 
         $model->guild = $data->has('guild') ? $data->get('guild.name') : null;
 
-        $model->talent = $data->get('talents.1.spec.name');
+        $model->talent = $data->get('talents.0.spec.name');
 
         $characterTitle = '%s';
         foreach ($data->get('titles', []) as $title) {
