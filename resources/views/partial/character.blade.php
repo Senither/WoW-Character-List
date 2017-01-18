@@ -1,7 +1,7 @@
 <div class="col-1">
     <p>
         <a target="blank" href="https://{{ $region }}.battle.net/wow/en/character/{{ mb_strtolower($character->realm) }}/{{ $character->name }}/advanced" class="softbutton">
-            <img src="https://{{ $region }}.battle.net/static-render/{{ $region }}/{{ $character->avatar }}" alt="Sample Logos"/>
+            <img src="https://render-{{ $region }}.worldofwarcraft.com/character/{{ $character->avatar }}" alt="Sample Logos"/>
         </a>
     </p>
 </div>
@@ -17,7 +17,7 @@
         {{ $character->race }} <u>{{ $character->talent }}</u> {{ $character->class }}, <br>
         Realm: <span class="character-realm">{{ $character->realm }}</span>
     </h5>
-    
+
     <table>
         <tr>
             <td>
